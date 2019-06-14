@@ -1,0 +1,21 @@
+public class OrderPizza
+{
+  //main method required for every java program
+  public static void main(String[]args)
+  {
+    int numberOfFriends = 7;//number of friends
+    int numberOfSlicesPerPerson = 3; // each person will have 4 slices
+    int numberofSlicesPerPiazza = 8;// each pie contains 8 slices
+    double costOfEachPiazza = 15.99; // assume this includes tax
+    int totalNumberOfPersons = numberOfFriends + 1;
+    int totalNumberOfSlices = totalNumberOfPersons *  numberOfSlicesPerPerson;
+    int totalNumberOfPizzas = totalNumberOfSlices / numberofSlicesPerPiazza;
+    double totalCostOfPizzas = costOfEachPiazza * totalNumberOfPizzas;
+    System.out.println(" Total number of persons : + " totalNumberOfPersons);
+    System.out.println(" Total number of slices : + " totalNumberOfSlices);
+    System.out.println(" Total number of Pizzas : + " totalNumberOfPizzas);
+    System.out.println(" Total cost of Pizzas : + " totalCostOfPizzas);
+    System.out.println(" I will need to order + " totalNumberOfPizzas + " and the total cost is "  + totalCostOfPizzas);
+    
+  }
+}
